@@ -15,6 +15,7 @@
   --box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.33),
     0 16px 32px rgba(0, 0, 0, 0.33);
+  background: linear-gradient(to bottom right, #383838, #000000);
 }
 @font-face {
   font-family: "Atkinson";
@@ -35,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(to bottom, #404040, #000000) no-repeat;
+  background: transparent no-repeat;
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -48,7 +49,7 @@ main {
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 3em 1em;
-  background: linear-gradient(to bottom, #404040, #000000);
+  background: transparent;
 }
 h1,
 h2,
