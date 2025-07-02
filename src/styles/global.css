@@ -142,7 +142,6 @@ hr {
     padding: 1em;
   }
   
-  /* Make tables responsive on mobile */
   table {
     display: block;
     overflow-x: auto;
@@ -150,25 +149,17 @@ hr {
     font-size: 14px;
   }
   
-  /* Adjust table cell padding for mobile */
   table td,
   table th {
     padding: 0.5em 0.25em;
     min-width: 60px;
   }
   
-  /* Make the usage column more readable on mobile */
   table td:last-child {
     min-width: 120px;
     max-width: 200px;
     white-space: normal;
     word-wrap: break-word;
-  }
-  
-  /* Adjust color swatch images for mobile */
-  table img {
-    width: 24px;
-    height: 24px;
   }
 }
 
