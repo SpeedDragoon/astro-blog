@@ -11,12 +11,12 @@ const { sticky = false } = Astro.props;
 
 <header class={sticky ? 'sticky' : ''}>
 	<nav>
+		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="social-links">
     <a href="https://youtube.com/@speeddragondev" target="_blank" transition:persist>
       <span class="sr-only">Subscribe to speeddragon on Youtube</span>
