@@ -1,6 +1,5 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 
 interface Props {
 	sticky?: boolean;
@@ -11,7 +10,6 @@ const { sticky = false } = Astro.props;
 
 <header class={sticky ? 'sticky' : ''}>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
@@ -58,7 +56,7 @@ const { sticky = false } = Astro.props;
 		margin: 0;
 		padding: 0 1em;
 		background: #111111aa no-repeat;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
     border-bottom: 1px solid #373737;
 	}
@@ -81,7 +79,7 @@ const { sticky = false } = Astro.props;
 	nav {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+    justify-content: space-between;
 	}
 	nav a {
 		padding: 0.5em 0.25em;
