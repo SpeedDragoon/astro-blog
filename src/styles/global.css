@@ -211,3 +211,37 @@ hr {
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
+
+/*/////////////////////////////////////////*/
+
+/* RGB EFFECT */
+
+.rgb-animate {
+  animation-iteration-count: infinite;
+  animation-duration: 120s;
+  animation-name: rgb_anim;
+}
+
+/* RGB HOVER EFFECT */
+
+.rgb-animate-hvr {
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-name: rgb_anim;
+}
+
+/* RGB ANIMATION EFFECT */
+
+@keyframes rgb_anim {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+
+  to {
+    filter: hue-rotate(0deg);
+  }
+}
