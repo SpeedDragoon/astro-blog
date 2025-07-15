@@ -5,7 +5,7 @@
  */
 
 :root {
-  --accent: darkviolet;
+  --accent: hsl(300 100% 55%);
   --accent-dark: #000d8a;
   --black: 170, 170, 170;
   --gray: 80, 80, 80;
